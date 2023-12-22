@@ -22,4 +22,5 @@ const App: React.FC = () => (
   </Card>
 );
 
-export default App;
+export default App
+;
