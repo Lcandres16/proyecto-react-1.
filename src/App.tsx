@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Card } from 'antd';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const { Meta } = Card;
+
+const App: React.FC = () => (
+  <Card
+    hoverable
+    style={{ width: 240, marginTop: 200, justifyContent: 'center', marginLeft: '600px' }}
+    cover={<img alt="example" src="https://res.cloudinary.com/dcba9lt2s/image/upload/v1702476736/onbqxbd3sf9rmrrgvjkt.webp" />}
+  >
+    <Meta
+      title={
+        <div>
+          <span style={{ color: '#FF00E8' }}>REACT GRAHQL DEVELOP</span>
+          <br />
+          <span style={{ color: '#FF00E8' }}>FOR ANY DEVELOPMENT</span>
+        </div>
+      }
+      description="Best one bars to take friends and relatives, one bars to take friends and relatives"
+    />
+  </Card>
+);
 
 export default App;
